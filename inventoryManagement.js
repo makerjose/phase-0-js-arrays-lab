@@ -1,5 +1,19 @@
 // Write your code here
+products = ['Laptop', 'Smartphone', 'Tablet', 'Headphones', 'Smartwatch'];
 
+function logFirstProduct() {
+    console.log(products[0]);
+}
+
+function updateProductName(index, newName) {
+    if (index >= 0 && index < products.length) {
+        products[index] = newName;
+    }
+}
+
+function removeLastProduct() {
+    products.pop();
+} 
 
 
 // Export the necessary parts for testing
@@ -10,3 +24,4 @@ module.exports = {
   removeLastProduct: typeof removeLastProduct !== 'undefined' ? removeLastProduct : undefined,
   products
 };
+
